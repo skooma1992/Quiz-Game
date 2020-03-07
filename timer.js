@@ -1,10 +1,12 @@
+// variables for timer functionality 
 var finishText = document.querySelector('.navbar-text');
 var completeEl = document.querySelector('#complete');
 var timeleft = (60);
 var score;
 
 finishText.textContent = timeleft;
-// Timer that will send you to the input page if it reaches 0
+// Decrement for the timer
+// also sends you to input page if timer reaches 0 OR youve run out of questions
 function decrement() {
     timeleft--;
     finishText.textContent = timeleft;
@@ -19,7 +21,7 @@ function decrement() {
         } 
 }
 
-;
+ 
 if (window.location.href.indexOf("quiz") > -1) {
     var downloadTimer = setInterval(decrement, 1000);   
 }
