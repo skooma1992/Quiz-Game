@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>High scores</title>
+</head>
+
+<body>
+     <!--Navigation bar containing the high score-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex mb-3">
+        <a class="navbar-brand p-2" href="highscores.html">View Highscores</a>
+        <!-- Timer location -->
+        <div class="ml-auto p-2" id="timer">
+            <span class="navbar-text h1">
+            </span>
+        </div>
+    </nav>
+    <!--Score container-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <h3 class="text-left" id="complete"></h3>
+                <h6 class="text-left">Enter Your Intitals</h6>
+                <input type="text" id="initials" style="width: 100%"></input>
+                <p class="text-left" id="your-score"></p>
+                <!-- Submit score button-->
+                <div id="submit">
+                    <button type="submit" class="btn btn-primary">Submit Score</button>
+                </div>
+
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+    <!-- refrence links-->
+    <script src="timer.js"></script>
+    <script src="timeup.js"></script>
+</body>
+
+</html>
